@@ -1,0 +1,1025 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.event input {
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(22, 221, 15);
+    width: 100%;
+    min-height: 10vh;
+    margin: 0;
+    position: fixed;
+    z-index: 99;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+/* LOGO */
+
+.logo {
+    background-color: rgba(106, 228, 44, 0.4);
+    width: 50%;
+    height: 60px;
+    float: left;
+    overflow: hidden;
+}
+
+.logo-img p {
+    background-color: tomato;
+    color: white;
+    border-radius: 0px 0px 40px 40px;
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+
+/* END LOGO */
+
+
+/* SUB MENU  */
+
+.sub-menu {
+    background-color: rgba(106, 228, 44, 0.4);
+    width: 50%;
+    height: 60px;
+    float: right;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+ul li ul li a:visited {
+    color: rgb(6, 6, 59);
+}
+
+ul li ul {
+    position: absolute;
+    right: 0;
+    left: -1px;
+    z-index: 99;
+    background-color: rgb(175, 235, 235);
+    padding: 5px;
+    width: 160px;
+    overflow: hidden;
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul li:hover {
+    background: rgb(240, 198, 198);
+    width: 100%;
+}
+
+.border {
+    background-color: rgb(46, 17, 211);
+    border: 2px solid;
+}
+
+
+/* END SUB MENU */
+
+
+/* BOX IN BANNER */
+
+.banner {
+    background-image: url(./images/Untitled-1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    width: 100%;
+    min-height: 90vh;
+    overflow: hidden;
+}
+
+.content {
+    width: 50%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.45);
+    opacity: 2px;
+    float: left;
+    overflow: hidden;
+}
+
+.content p {
+    width: 95%;
+    margin: 10px;
+    line-height: 55px;
+    font-size: 19px;
+}
+
+.banner-img {
+    width: 80%;
+    height: 70px;
+    position: absolute;
+    top: 79%;
+    left: 10%;
+    right: 10%;
+}
+
+.subcribe {
+    width: 50%;
+    height: 70px;
+    background-color: rgba(245, 245, 245, 0.45);
+    float: right;
+    position: relative;
+}
+
+.subcribe p {
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 5%;
+}
+
+.subcribe-1 {
+    width: 50%;
+    border: 1px solid;
+    background-color: rgb(243, 79, 38);
+    height: 50px;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.subcribe-1 a:visited {
+    color: white;
+}
+
+.subcribe-1:hover {
+    background: darkgoldenrod;
+}
+
+
+/* ICON */
+
+.subcribe-1 i {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    font-size: 25px;
+    color: rgb(238, 234, 234);
+}
+
+
+/* END ICON */
+
+
+/* END BOX IN BANNER */
+
+.title {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.title p {
+    margin: 0;
+    line-height: 100px;
+    text-align: center;
+}
+
+.title-title {
+    width: 80%;
+    background-color: rgb(246, 246, 246);
+    height: 100px;
+    margin: 0 auto;
+}
+
+.title-title p {
+    margin: 0;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+/* BOX CENTER */
+
+.box-center {
+    width: 80%;
+    background-color: rgb(246, 246, 246);
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+/* BOX-1 */
+
+.box-1 {
+    background-color: rgb(211, 211, 211);
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgba(102, 98, 98, 0.8);
+}
+
+
+/* BOX-1-1 */
+
+.box-1-1 {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    background-color: rgb(216, 45, 45);
+    z-index: 1;
+    width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    opacity: 0;
+    transition: 0.5s;
+    border: 3px solid #f03b3b;
+}
+
+.box-1 .box-1-1 p {
+    color: cornsilk;
+}
+
+
+/*END BOX-1-1 */
+
+.box-1 img {
+    width: 100%;
+    height: 300px;
+    transition: 0.6s;
+}
+
+.box-1 img:hover {
+    height: 250px;
+    transition: 0.5s;
+}
+
+.box-1:hover .box-1-1 {
+    opacity: 1;
+}
+
+.box-1 p {
+    text-align: center;
+    color: rgb(27, 21, 7);
+}
+
+
+/* END BOX-1 */
+
+
+/* BOX-2 */
+
+.box-2 {
+    background-color: rgb(211, 211, 211);
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-left: 3%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgba(102, 98, 98, 0.8);
+}
+
+
+/* BOX-2-1 */
+
+.box-2-1 {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    background-color: rgb(216, 45, 45);
+    z-index: 1;
+    width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    opacity: 0;
+    transition: 0.5s;
+    border: 3px solid #f03b3b;
+}
+
+.box-2 .box-2-1 p {
+    color: cornsilk;
+}
+
+
+/*END BOX-2-1 */
+
+.box-2 img {
+    width: 100%;
+    height: 300px;
+    transition: 0.6s;
+}
+
+.box-2 img:hover {
+    height: 250px;
+    transition: 0.5s;
+}
+
+.box-2 p {
+    text-align: center;
+    color: rgb(53, 51, 47);
+}
+
+.box-2:hover .box-2-1 {
+    opacity: 1;
+}
+
+
+/* END BOX-2 */
+
+
+/* BOX-3 */
+
+.box-3 {
+    background-color: rgb(211, 211, 211);
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-left: 3%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgba(102, 98, 98, 0.8);
+}
+
+
+/* BOX-3-1 */
+
+.box-3-1 {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    background-color: rgb(216, 45, 45);
+    z-index: 1;
+    width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    opacity: 0;
+    transition: 0.5s;
+    border: 3px solid #f03b3b;
+}
+
+.box-3 .box-3-1 p {
+    color: cornsilk;
+}
+
+
+/* END BOX-3-1 */
+
+.box-3 img {
+    width: 100%;
+    height: 300px;
+    transition: 0.6s;
+}
+
+.box-3 img:hover {
+    height: 250px;
+    transition: 0.5s;
+}
+
+.box-3:hover .box-3-1 {
+    opacity: 1;
+}
+
+.box-3 p {
+    text-align: center;
+    color: rgb(53, 51, 47);
+}
+
+
+/* END BOX-3 */
+
+
+/* END BOX CENTER */
+
+
+/* BOX ITEM */
+
+.box-item {
+    width: 100%;
+    margin: 0 auto;
+    background-color: darkslategrey;
+    /* height: 200px; */
+    overflow: hidden;
+}
+
+
+/* ITEM-1 */
+
+.item-1 {
+    width: 20%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.item-1 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.item-1 img:hover {
+    transform: rotate(10deg) scale(1.9);
+    transition: 0.5s;
+}
+
+
+/* END ITEM-1 */
+
+
+/* ITEM-2 */
+
+.item-2 {
+    width: 20%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.item-2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.item-2 img:hover {
+    transform: rotate(10deg) scale(1.9);
+    transition: 0.5s;
+}
+
+
+/* END ITEM-2 */
+
+
+/* ITEM-3 */
+
+.item-3 {
+    width: 20%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.item-3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.item-3 img:hover {
+    transform: rotate(10deg) scale(1.9);
+    transition: 0.5s;
+}
+
+
+/*END ITEM-3 */
+
+
+/* ITEM-4 */
+
+.item-4 {
+    width: 20%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.item-4 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.item-4 img:hover {
+    transform: rotate(10deg) scale(1.9);
+    transition: 0.5s;
+}
+
+
+/* END ITEM-4 */
+
+
+/* ITEM-5 */
+
+.item-5 {
+    width: 20%;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+
+.item-5 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.item-5 img:hover {
+    transform: rotate(10deg) scale(1.9);
+    transition: 0.5s;
+}
+
+
+/* END ITEM-5 */
+
+
+/* END BOX ITEM */
+
+
+/* B0X CENTER 1 */
+
+.box-center-1 {
+    width: 80%;
+    background-color: rgb(246, 246, 246);
+    margin: 0 auto;
+    /* height: 200px; */
+    overflow: hidden;
+}
+
+
+/* BOX-4 */
+
+.box-4 {
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-left: 2%;
+}
+
+
+/* BOX4-1 */
+
+.box-4-1 {
+    position: absolute;
+    left: 32%;
+    right: 60%;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: chartreuse;
+}
+
+.box-4-1 img {
+    width: 100%;
+    border-radius: 120px;
+}
+
+
+/*END BOX4-1 */
+
+
+/* BOX4-2 */
+
+.box-4-2 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    margin: 0 auto;
+    width: 70%;
+    height: 150px;
+    background-color: rgb(233, 233, 233)
+}
+
+.box-4-2 p {
+    text-align: center;
+}
+
+
+/* END BOX4-2 */
+
+
+/* END BOX-4 */
+
+
+/* BOX-5 */
+
+.box-5 {
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-left: 3%;
+}
+
+
+/* BOX-5-1 */
+
+.box-5-1 {
+    position: absolute;
+    left: 32%;
+    right: 60%;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: chartreuse;
+}
+
+.box-5-1 img {
+    width: 100%;
+    border-radius: 120px;
+}
+
+
+/* END BOX-5-1 */
+
+
+/* BOX-5-2 */
+
+.box-5-2 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    margin: 0 auto;
+    width: 70%;
+    height: 150px;
+    background-color: rgb(233, 233, 233);
+}
+
+.box-5-2 p {
+    text-align: center;
+}
+
+
+/* BOX-5-2 */
+
+
+/* END BOX-5 */
+
+
+/* BOX-6 */
+
+.box-6 {
+    position: relative;
+    background-color: rgb(233, 233, 233);
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-left: 3%;
+}
+
+
+/* BOX-6-1 */
+
+.box-6-1 {
+    position: absolute;
+    left: 32%;
+    right: 60%;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: chartreuse;
+}
+
+.box-6-1 img {
+    width: 100%;
+    border-radius: 120px;
+}
+
+
+/* END BOX-6-1 */
+
+
+/* BOX-6-2 */
+
+.box-6-2 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    margin: 0 auto;
+    width: 70%;
+    height: 150px;
+    background-color: rgb(233, 233, 233)
+}
+
+.box-6-2 p {
+    text-align: center;
+}
+
+
+/* END BOX-6-2 */
+
+
+/* BOX-6 */
+
+
+/* END B0X CENTER 1 */
+
+
+/* BOX-CENTER-2 */
+
+.box-center-2 {
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    height: 70px;
+}
+
+
+/* END BOX-CENTER-2 */
+
+
+/* BOX-CENTER-3 */
+
+.box-center-3 {
+    background-image: url(./images/592cffd40a92e3ccba83.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-center-3::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+}
+
+.box-center-3 table {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    margin: 0 auto;
+    height: 50px;
+    overflow: hidden;
+}
+
+.dangki p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+
+/* .box-center-3 table {
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+} */
+
+input {
+    width: 100%;
+    height: 40px;
+}
+
+.submit input {
+    width: 100%;
+    background-color: darkorange;
+}
+
+
+/*END BOX-CENTER-3 */
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background-color: rgb(32, 30, 30);
+}
+
+.footer-tn {
+    width: 80%;
+    background-color: rgb(70, 66, 66);
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* ICON */
+
+.icon i {
+    width: 10%;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    margin-left: 25%;
+    color: white;
+}
+
+
+/* END ICON */
+
+.footer-tn-1 {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    height: 270px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.footer-left {
+    width: 50%;
+    background-color: rgb(70, 66, 66);
+    height: 80px;
+    float: left;
+    overflow: hidden;
+}
+
+.footer-left p {
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 19px;
+}
+
+.footer-right {
+    width: 50%;
+    background-color: rgb(70, 66, 66);
+    height: 80px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+.right-1 {
+    width: 50%;
+    background-color: chartreuse;
+    border: 1px solid;
+    height: 50px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+
+.right-1 p {
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+.right-1:hover {
+    background: darkgoldenrod;
+}
+
+.right-1 a:visited {
+    color: cornsilk;
+}
+
+.footer-tn-2 {
+    width: 50%;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer-tn-2 p {
+    text-align: center;
+    line-height: 50px;
+    color: cornsilk;
+    font-size: 12px;
+}
+
+
+/* FOOTER-TN-1 */
+
+.footer-tn-left {
+    width: 24%;
+    height: 270px;
+    margin-right: 1.3%;
+    float: left;
+}
+
+.footer-tn-left i {
+    padding: 5px;
+    font-size: 20px;
+    width: 10%;
+}
+
+.footer-tn-left p {
+    width: 80%;
+    float: right;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.footer-tn-left-1 {
+    width: 24%;
+    height: 270px;
+    margin-right: 1.3%;
+    float: left;
+}
+
+.footer-tn-left-1 i {
+    padding: 5px;
+    font-size: 20px;
+    width: 10%;
+}
+
+.footer-tn-left-1 p {
+    width: 80%;
+    float: right;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.footer-tn-right {
+    width: 24%;
+    height: 270px;
+    margin-right: 1.3%;
+    float: left;
+}
+
+h2 {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.footer-tn-right-1 {
+    width: 24%;
+    height: 270px;
+    float: left;
+}
+
+.footer-tn-right-1 img {
+    width: 100%;
+    height: 100px;
+}
+
+.footer-tn-right-1 p {
+    padding: 0;
+    margin: 2px;
+}
+
+
+/* END FOOTER-TN-1 */
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+ul li a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: tomato;
+    display: block;
+}
+
+
+/* END FOOTER */
